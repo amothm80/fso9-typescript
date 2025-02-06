@@ -1,5 +1,5 @@
 import patients from "../../data/patients";
-import { newPatient, Patient, PatientNonSensitive } from "../types";
+import { NewPatient, Patient, PatientNonSensitive } from "../types";
 import { v1 as uuid } from 'uuid';
 
 function getPatientNonSensitiveData(): PatientNonSensitive[] {
@@ -12,7 +12,7 @@ function getPatientNonSensitiveData(): PatientNonSensitive[] {
   }));
 }
 
-export function addPatient(newPatientData:newPatient){
+export function addPatient(newPatientData:NewPatient){
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
   const id = uuid();
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
